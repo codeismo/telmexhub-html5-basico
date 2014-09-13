@@ -5,13 +5,17 @@
 		<title>Mi Página</title>
 		<meta charset="UTF-8" />
 		<style>
+
+
+			/*----------- SELECTORES DE ETIQUETA ----*/
+
 			/* estilos al footer */
 			/*Selector de etiqueta */
 
 
 			header{
 			   background-color:#e95644;
-			   background-image: url("recursos/imagenes/portadas/portada4.jpg");
+			  
 			   color:white;
 			}
 
@@ -20,8 +24,51 @@
 				color:white;
 			}
 
+
+			/*----------- SELECTORES DE CLASE ----*/
 			.servicio{
 				color:red;
+			}
+
+			.testimonio{
+				display: inline-block;
+				width:49%;
+			}
+
+			/*----------- SELECTORES DE ID ----*/
+
+			#menu{
+				background-color: blue;
+				display: inline-block;
+				width: 68%;
+			}
+
+			#slogan{
+			   background-color: green;
+			   display: inline-block;
+			   vertical-align: top;
+			   width: 30%;	
+			}
+
+			#presentacion{
+				background-image: url("recursos/imagenes/portadas/portada4.jpg");
+				/*hacemos que no se repita el fondo*/
+				background-repeat: no-repeat;
+				/*estira la imagen de fondo 
+				  preservando la relacion de aspecto
+				*/
+				background-size: cover;
+				/*centramos en el eje x y Y la imagen*/
+				background-position: center center;
+
+				color:white;
+				height: 500px;
+				/*para el tam de letra */
+				font-size: 40px;
+				/*para centrar horizontalmente*/
+				line-height: 500px;
+				text-align: center;
+				/*width: 150px;*/
 			}
 
 		</style>
@@ -29,10 +76,10 @@
 <!-- El body tiene el contenido de la página -->
 	<body>
 		<header>
-			<div>
+			<div id="slogan">
 				<h1>Mi página</h1>
 			</div>
-			<nav>
+			<nav id="menu">
 				<ul>
 					<li>Inicio</li>
 					<li>Galeria</li>
@@ -41,7 +88,7 @@
 				</ul>
 			</nav>
 		</header>
-		<section>
+		<section id="presentacion">
 			Programación Ágil
 		</section>
 		<section>
@@ -62,11 +109,11 @@
 			<div>
 				<h3>Testimonios</h3>
 			</div>
-			<div>
+			<div class="testimonio">
 				<img src="recursos/imagenes/testimonio.jpg"/>
 				<p>Excelente Servicio!!</p>
 			</div>
-			<div>
+			<div class="testimonio">
 				<video controls="controls" poster="recursos/imagenes/testimonio2.png">
 					<source src="recursos/videos/testimonio.mp4" type="video/mp4"/>
 					<source src="recursos/videos/testimonio.webm" type="video/webm"/>
